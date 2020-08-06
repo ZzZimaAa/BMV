@@ -1,0 +1,34 @@
+{
+  "name": "bmv",
+  "scripts": {
+    "start": "node index.js",
+    "dev:server": "nodemon index.js",
+    "dev:client": "npm start --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "test": "mocha --opts tests/mocha.opts"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "browserslist": "^4.13.0",
+    "caniuse-lite": "^1.0.30001111",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-passport": "^4.1.3",
+    "koa-router": "^9.1.0",
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.9.27",
+    "mongoose-private-paths": "^0.7.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "mocha": "^6.2.3",
+    "mongodb-memory-server": "^4.2.2",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "should": "^13.2.3"
+  }
+}
